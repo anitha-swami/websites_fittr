@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senthilkumaran - Certified Fitness Coach</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-slate-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="./thumbnail.jpg" alt="Senthilkumaran" class="h-10 w-10 rounded-full mr-2">
+                <span class="text-white font-bold text-xl">Senthilkumaran</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-white hover:text-green-400 transition-colors">Home</a>
+                <a href="#services" class="text-white hover:text-green-400 transition-colors">Services</a>
+                <a href="#about" class="text-white hover:text-green-400 transition-colors">About</a>
+                <a href="#testimonials" class="text-white hover:text-green-400 transition-colors">Reviews</a>
+                <a href="#consultation" class="text-white hover:text-green-400 transition-colors">Book Consultation</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-slate-700" id="mobile-menu">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#" class="text-white hover:text-green-400 transition-colors">Home</a>
+                <a href="#services" class="text-white hover:text-green-400 transition-colors">Services</a>
+                <a href="#about" class="text-white hover:text-green-400 transition-colors">About</a>
+                <a href="#testimonials" class="text-white hover:text-green-400 transition-colors">Reviews</a>
+                <a href="#consultation" class="text-white hover:text-green-400 transition-colors">Book Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('./Senthil-57.png');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Senthilkumaran</h1>
+                <h2 class="text-2xl md:text-3xl text-green-400 mb-6">Certified Fitness Coach at Fittr</h2>
+                <p class="text-xl text-white mb-8 italic">"If you're looking for weight loss, I'm not the right person. But I can promise a better quality of life in your 40s, 50s, 60s and beyond."</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#consultation" class="bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition-colors font-bold inline-flex items-center justify-center">
+                        <i class="fas fa-calendar-check mr-2"></i> Book Free Consultation
+                    </a>
+                    <a href="https://www.fittr.com/coaching/senthilkumaran-c-613397/?skill=fitness-and-nutrition" target="_blank" class="bg-white text-slate-800 py-3 px-6 rounded-md hover:bg-gray-100 transition-colors font-bold inline-flex items-center justify-center">
+                        <i class="fas fa-external-link-alt mr-2"></i> View on Fittr
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2" data-aos="fade-right">
+                    <img src="./Senthil-57.png" alt="Senthilkumaran" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="lg:w-1/2" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Who We Are</h2>
+                    <p class="text-gray-700 mb-4">I am Senthilkumaran, a <span class="font-bold text-green-600">NASM certified Behavior Change Specialist</span> and dedicated fitness coach with a passion for helping people transform their lives through sustainable health practices.</p>
+                    <p class="text-gray-700 mb-6">My approach focuses on creating personalized fitness and nutrition plans that work with your lifestyle, not against it. I believe in building habits that last a lifetime, not quick fixes that fade away.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="text-3xl font-bold text-green-600 mb-2">800+</div>
+                            <div class="text-gray-600">Clients Coached</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="text-3xl font-bold text-green-600 mb-2">15%</div>
+                            <div class="text-gray-600">Senior Citizens</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="text-3xl font-bold text-green-600 mb-2">30%</div>
+                            <div class="text-gray-600">With Metabolic Issues</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="text-3xl font-bold text-green-600 mb-2">20%</div>
+                            <div class="text-gray-600">Postpartum Mothers</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Fitness is about health and longevity, not weight loss."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Why We Are the Best</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- USP 1 -->
+                <div class="flex items-start" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-heart text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Focus on Longevity, Not Fast Weight Loss</h3>
+                        <p class="text-gray-600">We prioritize sustainable health improvements that enhance your quality of life for years to come, not just temporary results.</p>
+                    </div>
+                </div>
+                <!-- USP 2 -->
+                <div class="flex items-start" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-user-cog text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Personal Attention</h3>
+                        <p class="text-gray-600">Every plan is tailored to your unique lifestyle, preferences, and constraints, making it easier to maintain long-term.</p>
+                    </div>
+                </div>
+                <!-- USP 3 -->
+                <div class="flex items-start" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-leaf text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Holistic Lifestyle Guidance</h3>
+                        <p class="text-gray-600">We address all aspects of wellness including nutrition, exercise, sleep, and stress management for comprehensive health.</p>
+                    </div>
+                </div>
+                <!-- USP 4 -->
+                <div class="flex items-start" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Emotional Support and Accountability</h3>
+                        <p class="text-gray-600">Regular check-ins, progress tracking, and personalized feedback keep you motivated and on track to achieve your goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Client Reviews</h2>
+            
+            <div class="testimonial-slider relative max-w-4xl mx-auto" data-aos="fade-up">
+                <div class="overflow-hidden">
+                    <div class="testimonials-track flex transition-transform duration-300">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide w-full md:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                        <span class="text-green-600 font-bold">A</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Amirtharaj</h4>
+                                        <div class="text-yellow-400">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">"I lost 7kg in 3 months with Coach Senthil's guidance. His approach to nutrition and exercise is practical and sustainable. I've maintained my weight for over a year now!"</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide w-full md:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                        <span class="text-green-600 font-bold">R</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Radha Krishnan</h4>
+                                        <div class="text-yellow-400">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">"At 58, I was worried about starting a fitness program. Coach Senthil designed a plan that respected my limitations while still challenging me. My blood pressure is now normal without medication!"</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide w-full md:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                        <span class="text-green-600 font-bold">V</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Vishali Praveen Kumar</h4>
+                                        <div class="text-yellow-400">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">"As a new mother, I struggled to find time for fitness. Senthil's postpartum program was exactly what I needed - manageable workouts and nutrition advice that worked with my busy schedule."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="absolute top-1/2 left-0 -translate-y-1/2 -ml-4 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10 hover:bg-gray-100 transition-colors" id="prev-testimonial">
+                    <i class="fas fa-chevron-left text-gray-600"></i>
+                </button>
+                <button class="absolute top-1/2 right-0 -translate-y-1/2 -mr-4 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10 hover:bg-gray-100 transition-colors" id="next-testimonial">
+                    <i class="fas fa-chevron-right text-gray-600"></i>
+                </button>
+                
+                <!-- Indicators -->
+                <div class="flex justify-center mt-6">
+                    <button class="w-3 h-3 rounded-full bg-green-600 mx-1 testimonial-indicator active" data-index="0"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 mx-1 testimonial-indicator" data-index="1"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 mx-1 testimonial-indicator" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Consultation Section -->
+    <section id="consultation" class="py-16 bg-green-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Book Free Consultation</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8 max-w-4xl mx-auto">
+                <!-- Left Column: Form -->
+                <div class="md:w-1/2 bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-4">Schedule a Call</h3>
+                    <form id="consultation-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        <div>
+                            <label for="goal" class="block text-gray-700 mb-1">Your Fitness Goal</label>
+                            <select id="goal" name="goal" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                                <option value="">Select your primary goal</option>
+                                <option value="longevity">Improve Longevity</option>
+                                <option value="health">Better Overall Health</option>
+                                <option value="strength">Build Strength</option>
+                                <option value="postpartum">Postpartum Fitness</option>
+                                <option value="senior">Senior Fitness</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-1">Additional Information</label>
+                            <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition-colors font-bold">Book a Call</button>
+                    </form>
+                </div>
+                
+                <!-- Right Column: Calendly -->
+                <div class="md:w-1/2 bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center" data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-4">Book on Fittr</h3>
+                    <p class="text-gray-600 mb-6 text-center">Visit my Fittr profile to book a consultation directly through the platform.</p>
+                    <a href="https://www.fittr.com/coaching/senthilkumaran-c-613397/?skill=fitness-and-nutrition" target="_blank" class="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors font-bold inline-flex items-center">
+                        <i class="fas fa-external-link-alt mr-2"></i> Visit Fittr Profile
+                    </a>
+                    <div class="mt-8 w-full">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Why Choose Fittr?</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Secure payment processing</li>
+                                <li>Access to Fittr community</li>
+                                <li>Additional resources and tools</li>
+                                <li>Mobile app for on-the-go coaching</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features/Services Section -->
+    <section id="services" class="py-16 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Fitness Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Diet Chart Based on Lifestyle</h3>
+                    <p class="text-gray-600">Personalized nutrition plans that fit your daily routine, food preferences, and specific health goals.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Food Habit Improvements</h3>
+                    <p class="text-gray-600">Learn sustainable eating habits that improve your relationship with food and support long-term health.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Weekly Workout Sessions</h3>
+                    <p class="text-gray-600">Customized exercise programs designed for your fitness level, available equipment, and time constraints.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Weekly Progress Tracker</h3>
+                    <p class="text-gray-600">Regular monitoring of your progress with adjustments to your plan based on results and feedback.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Accountability Group</h3>
+                    <p class="text-gray-600">Join a supportive community of like-minded individuals on similar fitness journeys for motivation and shared experiences.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lifestyle-based Fitness Advice</h3>
+                    <p class="text-gray-600">As a NASM certified Behavior Change Specialist, I help you overcome mental barriers and build lasting healthy habits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Coach Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Senthilkumaran</h3>
+                    <p class="mb-2">Certified Fitness Coach at Fittr</p>
+                    <p class="mb-4">NASM Behavior Change Specialist</p>
+                    <p class="italic">"Vazhga Vazhamudan!"</p>
+                </div>
+                
+                <!-- Social Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Me</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.instagram.com/yourbalancedcoach" target="_blank" class="inline-flex items-center hover:text-green-400 transition-colors">
+                                <i class="fab fa-instagram text-xl mr-2"></i> @yourbalancedcoach
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.fittr.com/coaching/senthilkumaran-c-613397/?skill=fitness-and-nutrition" target="_blank" class="inline-flex items-center hover:text-green-400 transition-colors">
+                                <i class="fas fa-dumbbell text-xl mr-2"></i> Fittr Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@senthilkumaran.com" class="inline-flex items-center hover:text-green-400 transition-colors">
+                                <i class="fas fa-envelope text-xl mr-2"></i> Email Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Map -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Location</h3>
+                    <div class="h-48 bg-gray-800 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7602971.077316664!2d50.8057179777231!3d24.33555405474396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e48dfb1ab12bd%3A0x33d32f56c0080aa7!2sUnited%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1652345678901!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Senthilkumaran Fitness Coaching. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- AOS Animation Library Initialization -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>

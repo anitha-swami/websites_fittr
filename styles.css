@@ -1,0 +1,66 @@
+/* Custom styles beyond Tailwind */
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Testimonial slider styles */
+.testimonials-track {
+    width: 300%; /* 3 slides */
+}
+
+@media (max-width: 768px) {
+    .testimonials-track {
+        width: 300%; /* 3 slides at 100% each */
+    }
+}
+
+/* Active testimonial indicator */
+.testimonial-indicator.active {
+    background-color: #059669; /* green-600 */
+}
+
+/* Custom hover effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom animations for elements that need more than what AOS provides */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.custom-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Custom styling for form elements */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2); /* green-600 with opacity */
+}
+
+/* Custom styling for the mobile menu transition */
+#mobile-menu {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#mobile-menu:not(.hidden) {
+    max-height: 300px;
+    opacity: 1;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senthilkumaran - Certified Fitness Coach</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-color: #333;
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+        }
+        .hero-content {
+            max-width: 600px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #16a34a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+        .btn-white {
+            background-color: white;
+            color: #333;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="./thumbnail.jpg" alt="Senthilkumaran">
+                    <span>Senthilkumaran</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#consultation">Book Consultation</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Senthilkumaran</h1>
+                <h2>Certified Fitness Coach at Fittr</h2>
+                <p>"If you're looking for weight loss, I'm not the right person. But I can promise a better quality of life in your 40s, 50s, 60s and beyond."</p>
+                <a href="#consultation" class="btn">Book Free Consultation</a>
+                <a href="https://www.fittr.com/coaching/senthilkumaran-c-613397/?skill=fitness-and-nutrition" target="_blank" class="btn btn-white">View on Fittr</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Fitness Services</h2>
+            <div class="services">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <h3>Diet Chart Based on Lifestyle</h3>
+                    <p>Personalized nutrition plans that fit your daily routine, food preferences, and specific health goals.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <h3>Food Habit Improvements</h3>
+                    <p>Learn sustainable eating habits that improve your relationship with food and support long-term health.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <h3>Weekly Workout Sessions</h3>
+                    <p>Customized exercise programs designed for your fitness level, available equipment, and time constraints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Senthilkumaran Fitness Coaching. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
